@@ -16,6 +16,7 @@ import { NewsListComponent } from './components/shared/news-list/news-list.compo
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NewsMessageComponent } from './components/shared/news-message/news-message.component';
 import { FilterPipe } from './pipes/filter/filter.pipe';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FilterPipe } from './pipes/filter/filter.pipe';
     NewsListComponent,
     NewsMessageComponent,
     FilterPipe,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,11 +14,5 @@ body {
   font-family: sans-serif;
 }
 
-a,
-a:hover {
-  text-decoration: none;
-  color: var(--black);
-}
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
