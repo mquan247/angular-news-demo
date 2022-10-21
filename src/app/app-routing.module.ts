@@ -5,18 +5,9 @@ import { TechNewsComponent } from './components/tech-news/tech-news.component';
 import { TopNewsComponent } from './components/top-news/top-news.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: TopNewsComponent,
-  },
-  {
-    path: 'technology',
-    component: TechNewsComponent,
-  },
-  {
-    path: 'science',
-    component: ScienceNewsComponent,
-  },
+  { path: '', component: TopNewsComponent },
+  { path: 'technology', component: TechNewsComponent },
+  { path: 'science', component: ScienceNewsComponent },
 ];
 
 @NgModule({
