@@ -1,0 +1,14 @@
+<div class="container-fluid mt-3">
+  <h4>Technology News</h4>
+  <div>
+    <input type="search" [(ngModel)]="searchNews" placeholder="Search">
+  </div>
+  <div class="d-flex flex-wrap justify-content-center">
+    <app-news-list [data]="data" *ngFor=" let data of techNewsData | paginate: { itemsPerPage: 8, currentPage: page, totalItems: totalNewsPage }
+      | filter: searchNews ">
+    </app-news-list>
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+  <!-- <app-news-detail [data]="techNewsData"></app-news-detail> -->
+</div>
+<router-outlet></router-outlet>

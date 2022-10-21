@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ScienceNewsComponent } from './components/science-news/science-news.component';
+import { TechNewsComponent } from './components/tech-news/tech-news.component';
+import { TopNewsComponent } from './components/top-news/top-news.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: TopNewsComponent,
+  },
+  {
+    path: 'technology',
+    component: TechNewsComponent,
+  },
+  {
+    path: 'science',
+    component: ScienceNewsComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
